@@ -193,6 +193,14 @@ main,footer{overflow-x:clip}
 .pf-wrap { max-width: 1160px; margin: 0 auto; }
 .pf-head { max-width: 40rem; margin-bottom: 2.5rem; }
 .pf-head h2 { font-family: var(--pf-font); font-weight: 700; font-size: clamp(1.8rem, 4.5vw, 2.8rem); line-height: 1.1; margin: 0 0 .75rem; letter-spacing: -.02em; color:#111827}
+.pf-head h2::after {content: "";
+    display: block;
+    height: 4px;
+    width: 90px;
+    background: linear-gradient(90deg, #0066B3, #0066B3);
+    border-radius: 2px;
+    margin-top: 10px;
+    transition: width .9s .3s;}
 .pf-head p { margin: 0; color: #6b7280; font-size: 1.05rem; line-height: 1.55; }
 
 .pf-feature {
