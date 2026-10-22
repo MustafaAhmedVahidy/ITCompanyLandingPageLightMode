@@ -25,7 +25,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:va
 .nav{display:flex;justify-content:space-between;align-items:center;min-height:60px;gap:12px;padding-top:10px;padding-bottom:10px}
 .logo{font-weight:900;color:var(--t);text-decoration:none;font-size:1.15rem}
 .btn{display:inline-block;background:#0066B3;color:#ffffff;padding:7px 20px;border-radius:7px;font:inherit;font-weight:800;text-decoration:none;border:2px solid #0066B3;cursor:pointer;transition:transform .2s}
-@media(max-width:860px){.btn{text-align:center;margin-bottom:10px}}
+@media(max-width:860px){.btn{text-align:center;margin-bottom:10px;font-size: small}}
 .btn:hover{transform:translateY(-2px);opacity:.9}
 .btn.o{background:transparent;color:var(--t);border-color:var(--t)}
 .btn:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--a);outline-offset:2px}
@@ -129,7 +129,7 @@ footer{padding:28px 0 90px;border-top:1px solid var(--l);color:var(--m);font-siz
 .pn .btn{padding:10px 20px}
 .hud{position:absolute;left:max(20px,calc((100vw - 1080px)/2 + 20px));bottom:18px;font:600 .78rem var(--mono);letter-spacing:2px;color:var(--m);display:flex;gap:10px;align-items:center}
 .hud b{color:#0066B3;font-size:1rem}.sg{display:flex;gap:4px}.sg i{width:18px;height:3px;border-radius:2px;background:var(--l);transition:background .3s}.sg i.on{background:#0066B3}
-@media(max-width:860px){.wp{--W:min(92vw,52svh)}.wheel{top:34%;right: calc(var(--W) / -1.35)}.pns{left:20px;right:20px;bottom:auto;transform:none;width:auto;top:32%;}.pn{padding:16px;width:70%;background: rgba(255, 255, 255, 0);}.pn p{font-size:.95rem;margin-bottom:10px}.ni .lb{display:none}.hud{display:none}.wh-t{max-width:70vw;font-size: clamp(2.1rem, 4.2vw, 2.8rem);}}
+@media(max-width:860px){.wp{--W:min(92vw,52svh)}.wheel{top:34%;right: calc(var(--W) / -1.35)}.pns{left:20px;right:20px;bottom:auto;transform:none;width:auto;top:32%;}.pn{padding:16px;width:70%;background: rgba(255, 255, 255, 0);height: max-content;border-width: 0;border-left: 3px solid #0066B3;}.pn p{font-size:.95rem;margin-bottom:10px}.ni .lb{display:none}.hud{display:none}.wh-t{max-width:70vw;font-size: clamp(2.1rem, 4.2vw, 2.8rem);}}
 @media(prefers-reduced-motion:reduce){.r2,.sweep,.core{animation:none}.pn,.ni{transition:none}}
 .kick,.strip,.fit .b,.sticky .q{color:#fff}
 #morph{height:420vh;padding:0;position:relative}
